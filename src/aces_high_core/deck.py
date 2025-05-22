@@ -1,7 +1,7 @@
 import random
-from .card import Suit, Rank, Card
-
 from abc import ABC, abstractmethod
+
+from .card import Card, Rank, Suit
 
 
 class BaseDeck(ABC):

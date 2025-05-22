@@ -1,5 +1,6 @@
 import pytest
-from aces_high_core import StandardDeck, Card, Rank, Suit
+
+from aces_high_core import Card, Rank, StandardDeck, Suit
 
 
 @pytest.fixture

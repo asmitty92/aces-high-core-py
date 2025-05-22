@@ -1,5 +1,6 @@
-from aces_high_core import Card, Suit, Rank
 import pytest
+
+from aces_high_core import Card, Rank, Suit
 
 
 def test_card_has_suit():
