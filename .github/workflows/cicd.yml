@@ -29,5 +29,9 @@ jobs:
       - name: Run black in check mode
         run: black --check src/ tests/
       
+      - name: Install Ruff
+        run: pip install ruff
+
+      
       - name: Run Ruff
         run: ruff check src/ tests/
