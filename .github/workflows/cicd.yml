@@ -1,0 +1,30 @@
+name: CI/CD Workflow
+
+on:
+  push:
+    paths:
+      - "src/**.py"
+      - "tests/**.py"
+      - ".github/workflows/**"
+  pull_request:
+    paths:
+      - "src/**.py"
+      - "tests/**.py"
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install black
+        run: pip install black
+
+      - name: Run black in check mode
+        run: black --check src/ tests/
