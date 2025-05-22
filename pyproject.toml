@@ -3,7 +3,7 @@ name = "aces-high-core-py"
 version = "0.1.0"
 description = "Base library for card game logic"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = [
     "pytest-cov>=6.1.1",
 ]
