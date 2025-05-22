@@ -35,3 +35,9 @@ jobs:
       
       - name: Run Ruff
         run: ruff check src/ tests/
+      
+      - name: Install pytest
+        run: pip install pytest
+      
+      - name: Run tests
+        run: pytest
