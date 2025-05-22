@@ -20,7 +20,6 @@ def test_card_has_repr():
 @pytest.mark.parametrize(
     "rank,expected_value",
     [
-        
         (Rank.ACE, 1),
         (Rank.TWO, 2),
         (Rank.THREE, 3),
@@ -34,7 +33,7 @@ def test_card_has_repr():
         (Rank.JACK, 11),
         (Rank.QUEEN, 12),
         (Rank.KING, 13),
-    ]
+    ],
 )
 def test_card_has_correct_value(rank, expected_value):
     card = Card(Suit.CLUBS, rank)
